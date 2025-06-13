@@ -13,4 +13,6 @@ Dear {name},
     Warm regards,
     ソヌ
     My Portfolio: https://sonusid.me/
+    LinkedIn: https://www.linkedin.com/in/firoj-siddiquie-3215a627b/
+    GitHub: https://github.com/sonusid1325
     My Email: {sender_email}
