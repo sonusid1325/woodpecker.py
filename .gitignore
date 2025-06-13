@@ -3,3 +3,6 @@ venv/
 
 #.env file
 .env
+
+#sample files
+demo.py
