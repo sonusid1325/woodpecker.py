@@ -10,7 +10,7 @@ load_dotenv()
 
 # Pull values from environment
 sender_email = os.getenv("SENDER_EMAIL")
-sender_data = pd.read_csv("demo.csv")
+sender_data = pd.read_csv("data.csv")
 display_name = os.getenv("DISPLAY_NAME")
 # receiver_email = os.getenv("RECEIVER_EMAIL")
 
