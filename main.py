@@ -1,9 +1,15 @@
+from pickle import format_version
+from timeit import template
 import os
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from dotenv import load_dotenv
 import pandas as pd
+from token import AT
+
+with open("application.txt", "r") as file:
+    content = file.read()
 
 # Load env vars from .env file
 load_dotenv()
@@ -20,15 +26,19 @@ username = os.getenv("SMTP_USERNAME")
 password = os.getenv("SMTP_PASSWORD")
 
 
-for email in sender_data["email"]:
+for index , row in sender_data.iterrows():
+    email = row['email']
+    name = row['name']
+    company = row['company']
+
 # Compose the email
     message = MIMEMultipart()
     message["From"] = f"{display_name} <{sender_email}>"
     message["To"] = email
-    message["Subject"] = f"{display_name}"
+    message["Subject"] = f"Application for Internship Opportunity."
 
     # Email body
-    body = "Hello vaii!!!"
+    body = content.format(name=name, sender_email=sender_email, domain="Backend Development", company_name=company)
     message.attach(MIMEText(body, "plain"))
 
     try:

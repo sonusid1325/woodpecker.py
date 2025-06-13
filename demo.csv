@@ -1,4 +1,5 @@
-,id,email,name,age
-0,01,random1@gmail.com,SONU,20
-1,02,random2@gmail.com,SONU,20
-2,03,random3@gmail.com,SONU,20
+,id,email,name,company
+0,01,fakeid00@gmail.com,USER 0,Google
+1,02,fakeid01@gmail.com,USER 1,Meta
+2,03,fakeid02@gmail.com,USER 2,Amazon
+3,04,fakeid03@gmail.com,USER 3,Microsoft
