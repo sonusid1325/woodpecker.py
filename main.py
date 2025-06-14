@@ -1,3 +1,5 @@
+# Made with ❤️ by ソヌ
+# Automating cold emails, the smart way.
 from pickle import format_version
 from timeit import template
 import os
